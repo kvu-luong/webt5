@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<title>Web SoSanhGiaNhanh</title>
-		<link href="./css/style.css" rel="stylesheet"></link>
+		<link href="./css/font-awesome.css" rel="stylesheet"/>
+		<link href="./css/style.css" rel="stylesheet"/>
 	</head>
 	<body>
 		<div class="grid-37">
 			<div id="left-side">
 				<div class="logo">
-					<img alt="logo" src="./assets/img">
+					<img alt="logo" src="//jevelin.shufflehound.com/portfolio1/wp-content/uploads/sites/12/2017/03/Logo.png">
 				</div>
 				<div class="navigation">
 					<nav>
@@ -21,7 +22,12 @@
 					</nav>
 				</div>
 				<div class="footer">
-					<h5>Where to find and buy fastest and cheapest on the wolrd.<strong>AVU design</strong></h5>
+					<div><h5>Where to find and buy fastest and cheapest on the wolrd.</h5></div>
+					<div class="footer__social">
+						<a href="#" class="footer__icon fa fa-facebook"></a>
+						<a href="#" class="footer__icon fa fa-instagram"></a>
+						<a href="#" class="footer__icon fa fa-youtube"></a>
+					</div>
 				</div>
 			</div>
 			<div id="right-side">

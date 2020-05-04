@@ -3,9 +3,40 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .grid-37 {
   display: grid;
   grid-template-columns: 250px 1fr;
+}
+.grid-37 #left-side {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social {
+  display: table;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.footer__icon {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  padding: 0;
+  line-height: 40px;
+}
+.footer__icon:last-child {
+  border-right: none;
 }
 
 /*# sourceMappingURL=style.css.map */
