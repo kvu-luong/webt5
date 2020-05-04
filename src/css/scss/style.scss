@@ -1,3 +1,8 @@
+$colorPrimary: #00d7ff;
+$colorBlur:  #8d8d8d ;
+$colorInk: #333;
+$colorBorder: #ddd;
+$fontPrimary: "Raleway";
 *{
 	margin: 0;
 	padding: 0;
@@ -7,6 +12,9 @@ ul{
 }
 a{
 	text-decoration: none;
+}
+body{
+	font-family: $fontPrimary;
 }
 .grid-37{
 	display: grid;
@@ -18,23 +26,81 @@ a{
 	    flex-direction: column;
 	    justify-content: space-between;
 	    align-items: center;
+	    border-right: 1px solid $colorBorder;
+
+	    .logo{
+			padding-top: 32px;
+		}
+		.navigation{
+			    text-align: center;
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+			a{
+				font-weight: 600;
+			    color: $colorInk;
+			    display: inline-block;
+			    width: fit-content;
+			    padding-top: 30px;
+			    line-height: 30px;
+
+		    &:first-child{
+		    	padding-top: 0;
+		    }
+			&::after{
+				content: '';
+			    width: 0;
+			    height: 3px;
+			    background-color: rgba(0, 215, 255,1);
+			    transition: width .3s;
+			    display: block;
+			}
+			&:hover::after{
+				width: 100%;
+			}
+		}
+		}
+
+
 	}
 }
 .footer{
+	h5{
+		text-align: center;
+		font-family: $fontPrimary;
+		padding-bottom: 16px;
+		font-weight: 400;
+		color: $colorBlur;
+	}
 	&__social{
 		display: table;
 		width: 100%;
-	    border: 1px solid #ddd;
+	    border: 1px solid $colorBorder;
+	    border-right: none;
 	}
 	&__icon{
 		display: table-cell;
 	    text-align: center;
-	    border-right: 1px solid #ddd;
+	    border-right: 1px solid $colorBorder;
 	    padding: 0;
 	    line-height: 40px;
+	    color: $colorPrimary;
 
 		&:last-child{
 			border-right: none;
+		}
+
+		&::after{
+			content: '';
+		    width: 0;
+		    height: 2px;
+		    background-color: rgba(0, 215, 255,1);
+		    transition: width .3s;
+		    display: block;
+		}
+		&:hover::after{
+			width: 100%;
 		}
 	}
 }
